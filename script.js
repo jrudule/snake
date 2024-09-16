@@ -2,6 +2,7 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
+const body = document.querySelector('body');
 const startScreen = document.getElementById('startScreen');
 const startButton = document.getElementById('startButton');
 const widthButtons = document.querySelectorAll('.width-button');
@@ -143,6 +144,7 @@ function startGame() {
     };
 
     // Display elements
+    body.height = '-webkit-fill-available';
     startScreen.style.display = 'none'; // Hide the start screen
     canvas.style.display = 'block'; // Show the game canvas
     scoreDisplay.style.display = 'block'; // Show the score display
@@ -266,6 +268,7 @@ function gameOver() {
 }
 
 function restartGame() {
+    body.height = '100vh';
     startScreen.style.display = 'flex';
     canvas.style.display = 'none';
     scoreDisplay.style.display = 'none';
