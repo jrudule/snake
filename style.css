@@ -21,7 +21,6 @@ body {
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
-    /* background-size: 100% 100%; */
     background-position: right;
 }
 
@@ -172,7 +171,10 @@ button[name="300"], button[name="200"], button[name="100"] {
 }
 
 @media screen and (max-width: 910px) {
-
+    body {
+        height: 80vh;
+    }
+    
     .startFrame {
         margin: 100px;
         width: 80vw;
