@@ -172,7 +172,10 @@ button[name="300"], button[name="200"], button[name="100"] {
 }
 
 @media screen and (max-width: 910px) {
-
+    #startScreen {
+        height: 80%;
+    }
+        
     .startFrame {
         margin: 100px;
         width: 80vw;
