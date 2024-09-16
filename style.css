@@ -21,8 +21,8 @@ body {
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
-    /* background-size: 100% 100%; */
     background-position: right;
+    overflow: hidden;
 }
 
 .startFrame {
@@ -172,9 +172,6 @@ button[name="300"], button[name="200"], button[name="100"] {
 }
 
 @media screen and (max-width: 910px) {
-    #startScreen {
-        height: 80%;
-    }
         
     .startFrame {
         margin: 100px;
