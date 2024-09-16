@@ -18,7 +18,7 @@ body {
     align-items: center;
     background-image: url('snake-bg.jpg');
     width: 100vw;
-    height: -webkit-fill-available;;
+    height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: right;
@@ -171,7 +171,10 @@ button[name="300"], button[name="200"], button[name="100"] {
 }
 
 @media screen and (max-width: 910px) {
-        
+    body {
+        height: 80vh;
+    }
+    
     .startFrame {
         margin: 100px;
         width: 80vw;
