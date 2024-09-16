@@ -1,0 +1,327 @@
+body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333333;
+}
+
+#startScreen, #gameOverScreen {
+    text-align: center;
+}
+
+#startScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('snake-bg.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    background-position: right;
+}
+
+.startFrame {
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: #000 4px solid;
+    border-radius: 20px;
+    padding: 25px;
+    background: rgb(205, 242, 148);
+}
+
+.startFrame > h1 {
+    font-size: 100px;
+    margin: 0 0 30px;
+}
+
+#startButton {
+    padding: 15px 40px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 20px;
+    background: rgb(68, 223, 76);
+    font-weight: 700;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+div.button-group > div {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.width-button, #restartButton{
+    padding: 12px 18px;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#restartButton {
+    background: red;
+    font-weight: 700;
+}
+
+#restartButton:hover {
+    background: rgb(203, 12, 12);
+}
+
+.width-button:focus{
+    background: #00000036;
+    border: #000 solid 3px;
+}
+
+.firstBtn {
+   background: rgb(36, 180, 209);  
+}
+.secondBtn {
+   background: orange;
+}
+.thirdBtn {
+     background: rgb(233, 9, 42);
+}
+
+button[name="600"], button[name="500"], button[name="400"], 
+button[name="300"], button[name="200"], button[name="100"] {
+    display: none;
+}
+
+#gameCanvas {
+    border-radius: 10px;
+    background: #e0e0e0;
+}
+
+#scoreDisplay {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    align-self: self-start;
+    align-self: flex-start;
+    margin: 0 auto; 
+}
+
+#scoreDisplay h3 {
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: #000 solid 2px;
+    margin: 5px 0;
+}
+
+#gameOverScreen {
+    position: absolute;
+    background-color: #fff;
+    padding: 50px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin-top: -50px;
+    z-index: 5;
+}
+
+#gameOverScreen > p {
+    font-size: 20px;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    position: absolute;
+}
+@media screen and (max-width: 1210px) {
+    .startFrame {
+        width: 400px;
+        height: 300px;
+    }
+
+    .startFrame > h1 {
+        font-size: 70px;
+    }
+
+    div.button-group > div, #startButton {
+        font-size: 25px;
+    }
+
+    .width-button, #restartButton {
+        font-size: 20px;
+    }
+
+    button[name="1200"] {
+        display: none;
+    }
+
+    button[name="600"] {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+
+    .startFrame {
+        margin: 100px;
+        width: 80vw;
+        align-self: flex-start;
+    }
+
+    .startFrame > h1 {
+        font-size: 70px;
+    }
+
+    div.button-group > div, #startButton {
+        font-size: 25px;
+    }
+
+    .width-button, #restartButton {
+        font-size: 20px;
+    }
+
+    button[name="900"] {
+        display: none;
+    }
+
+    button[name="500"] {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 710px) {
+
+    .startFrame > h1 {
+        font-size: 50px;
+    }
+
+    div.button-group > div, #startButton {
+        font-size: 20px;
+    }
+
+    .width-button, #restartButton {
+        font-size: 18px;
+    }
+
+    button[name="700"] {
+        display: none;
+    }
+
+    button[name="400"] {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .startFrame {
+        margin: 20px;
+    }
+
+    button[name="600"] {
+        display: none;
+    }
+
+   
+}
+
+@media screen and (max-width: 505px) {
+    button[name="500"] {
+        display: none;
+    }
+
+    button[name="300"] {
+        display: inline-block;
+    } 
+
+}
+
+@media screen and (max-width: 405px) {
+
+    button[name="400"] {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 305px) {
+
+    button[name="300"] {
+        display: none;
+    }
+
+    button[name="200"] {
+        display: inline-block;
+    }
+    
+}
+
+@media screen and (max-width: 205px) {
+
+    button[name="200"] {
+        display: none;
+    }
+    button[name="100"] {
+        display: inline-block;
+    }
+}
+
+
+
+@media screen and (min-width: 1800px) {
+    .startFrame {
+        width: 40%;
+        height: 50%;
+    }
+
+    .startFrame > h1 {
+        font-size: 130px;
+    }
+
+    div.button-group > div, #startButton{
+        font-size: 40px;
+    }
+    .width-button, #restartButton {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+
+    .startFrame > h1 {
+        font-size: 180px;
+    }
+
+    div.button-group > div, #startButton {
+        font-size: 60px;
+    }
+
+    .width-button, #restartButton {
+        font-size: 45px;
+    }
+
+} 
+
+@media screen and (min-width: 3200px) {
+
+    .startFrame > h1 {
+        font-size: 220px;
+    }
+
+    div.button-group > div, #startButton{
+        font-size: 80px;
+    }
+    .width-button, #restartButton {
+        font-size: 60px;
+    }
+
+} 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="startScreen">
+        <div class="startFrame">
+            <h1>Snake Game</h1>
+            <div class="button-group">
+                <div>Select Canvas Width</div>
+                <button class="width-button firstBtn" data-width="1200" name="1200">1200</button>
+                <button class="width-button secondBtn" data-width="900" name="900">900</button>
+                <button class="width-button thirdBtn" data-width="700" name="700">700</button> 
+
+                <button class="width-button firstBtn" data-width="600" name="600">600</button>
+                <button class="width-button secondBtn" data-width="500" name="500">500</button>
+                <button class="width-button thirdBtn" data-width="400" name="400">400</button>
+
+                <button class="width-button firstBtn" data-width="300" name="300">300</button>
+                <button class="width-button secondBtn" data-width="200" name="200">200</button>
+                <button class="width-button thirdBtn" data-width="100" name="100">100</button>
+            </div>
+            <button id="startButton">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas" style="display: none;"></canvas>
+    <div id="scoreDisplay" style="display: none;">
+        <h3>Score: <span id="score">0</span></h3>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="overlay" style="display: none;"></div>
+    <div id="gameOverScreen" style="display: none;">
+        <h1>Game Over</h1>
+        <p>Your Score: <span id="finalScore">0</span></p>
+        <button id="restartButton">Restart</button>
+    </div>
+
+    <!-- Touch Controls for Mobile -->
+    <div id="touchControls" style="display: none;">
+        <div class="button-row">
+            <button class="control-button" id="upButton">▲</button>
+        </div>
+        <div class="button-row">
+            <button class="control-button" id="leftButton">◀</button>
+            <button class="control-button" id="rightButton">▶</button>
+        </div>
+        <div class="button-row">
+            <button class="control-button" id="downButton">▼</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
