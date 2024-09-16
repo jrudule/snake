@@ -20,7 +20,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-attachment: fixed;
-    background-size: cover;
+    /*  background-size: cover; */
     background-position: right;
     overflow: hidden;
 }
