@@ -6,6 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #333333;
+    overscroll-behavior: contain;
 }
 
 #startScreen, #gameOverScreen {
@@ -171,9 +172,6 @@ button[name="300"], button[name="200"], button[name="100"] {
 }
 
 @media screen and (max-width: 910px) {
-    body {
-        height: 80vh;
-    }
     
     .startFrame {
         margin: 100px;
