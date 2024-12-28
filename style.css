@@ -44,13 +44,23 @@ body {
     margin: 0 0 30px;
 }
 
-#startButton {
+.buttonDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#startButton, #howToPlayButton {
     padding: 15px 40px;
     font-size: 22px;
     cursor: pointer;
-    margin-top: 20px;
     background: rgb(68, 223, 76);
     font-weight: 700;
+}
+
+#howToPlayButton {
+    background: rgb(213, 250, 91);
 }
 
 .button-group {
@@ -144,23 +154,38 @@ button[name="300"], button[name="200"], button[name="100"] {
     z-index: 4;
     position: absolute;
 }
+
+.rules {
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 5;
+    top: 30%;
+    margin: auto;
+    background: white;
+    height: 40vh;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.x {
+    background: rgb(72, 199, 72);
+    width: max-content;
+    padding: 0 6px 2px;
+    border-radius: 5px;
+    color: rgb(228, 228, 228);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.x:hover {
+    background: rgb(27, 81, 10);
+    color: #000;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1210px) {
-    .startFrame {
-        width: 400px;
-        height: 300px;
-    }
-
-    .startFrame > h1 {
-        font-size: 70px;
-    }
-
-    div.button-group > div, #startButton {
-        font-size: 25px;
-    }
-
-    .width-button, #restartButton {
-        font-size: 20px;
-    }
 
     button[name="1200"] {
         display: none;

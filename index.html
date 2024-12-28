@@ -13,19 +13,34 @@
             <h1>Snake Game</h1>
             <div class="button-group">
                 <div>Select Canvas Width</div>
-                <button class="width-button firstBtn" data-width="1200" name="1200">1200</button>
-                <button class="width-button secondBtn" data-width="900" name="900">900</button>
-                <button class="width-button thirdBtn" data-width="700" name="700">700</button> 
+                <button class="width-button firstBtn" data-width="1200" name="1200">XXL</button>
+                <button class="width-button secondBtn" data-width="900" name="900">XL</button>
+                <button class="width-button thirdBtn" data-width="700" name="700">L</button> 
 
-                <button class="width-button firstBtn" data-width="600" name="600">600</button>
-                <button class="width-button secondBtn" data-width="500" name="500">500</button>
-                <button class="width-button thirdBtn" data-width="400" name="400">400</button>
+                <button class="width-button firstBtn" data-width="600" name="600">M</button>
+                <button class="width-button secondBtn" data-width="500" name="500">S</button>
+                <button class="width-button thirdBtn" data-width="400" name="400">XS</button>
 
-                <button class="width-button firstBtn" data-width="300" name="300">300</button>
-                <button class="width-button secondBtn" data-width="200" name="200">200</button>
-                <button class="width-button thirdBtn" data-width="100" name="100">100</button>
+                <button class="width-button firstBtn" data-width="300" name="300">XXS</button>
             </div>
-            <button id="startButton">Start Game</button>
+            <div class="buttonDiv">
+                <button id="startButton">Start Game</button>
+                <button id="howToPlayButton">How to play</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Rules -->
+    <div class="rules">
+        <div class="x">x</div>
+        <div>
+            <p>Guide the snake to collect food and grow longer. Avoid hitting the walls or your own tail!</p>
+            
+            <h2>Controls:</h2>
+            <ul>
+                <li><strong>Keyboard:</strong> Use the arrow keys (<strong>↑ ↓ ← →</strong> or <strong>w s a d</strong>) to move the snake.</li>
+                <li><strong>Touch:</strong> Swipe in the direction you want the snake to move.</li>
+            </ul>
         </div>
     </div>
 
