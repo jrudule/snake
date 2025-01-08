@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "jsdom": "^25.0.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
